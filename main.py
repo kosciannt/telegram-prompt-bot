@@ -59,7 +59,7 @@ async def send_prompt(update: Update, context: ContextTypes.DEFAULT_TYPE, sessio
     await update.callback_query.message.reply_text(f"Gotowy prompt dla {tool}:\n\n{prompt}")
 
 if __name__ == '__main__':
-    app = ApplicationBuilder().token(os.getenv("BOT_TOKEN")).build()
+    app = ApplicationBuilder().token(os.getenv("7744294449:AAFBS2CzH6BEKZDOSvqmjCJbyPzTgdVjeZc")).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(handle_callback))
     print("Bot is running...")
