@@ -1,6 +1,6 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
-
+import os
 TOOLS = ["KlingAI", "GenfluenceAI", "LoRA", "ComfyUI"]
 PARAMETERS = {
     "style": ["cinematic", "cyberpunk", "anime", "digital painting", "realism", "dreamcore", "baroque", "3D render"],
